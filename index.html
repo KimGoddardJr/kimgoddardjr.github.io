@@ -61,7 +61,7 @@
 
   <!-- Tab links -->
   <div align="center" class="tab margin-top-sm">
-    <button class="tablinks" onclick="openCity(event, 'WEEK1')">WEEK 1</button>
+    <button class="tablinks" onclick="openCity(event, 'WEEK1')" id="defaultOpen">WEEK 1</button>
     <button class="tablinks" onclick="openCity(event, 'WEEK2')">WEEK 2</button>
     <button class="tablinks" onclick="openCity(event, 'WEEK3')">WEEK 3</button>
     <button class="tablinks" onclick="openCity(event, 'WEEK4')">WEEK 4</button>
@@ -103,26 +103,20 @@
   
           <ul>
             <li id="WEEK1" class="tabcontent  cd-schedule__event">
-              <a data-start="09:00" data-end="09:30" data-content="event-colors1" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Module Introduction</em>
-              </a>
-            </li>
-
-            <li id="WEEK1" class="tabcontent  cd-schedule__event">
-              <a data-start="10:30" data-end="12:00" data-content="event-yoga-1" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Introduction to Colors 1 / Basics</em>
+              <a data-start="09:00" data-end="12:00" data-content="event-colors1" data-event="event-1" href="#0">
+                <em class="cd-schedule__name">Introduction to Colors</em>
               </a>
             </li>
 
             <li id="WEEK2" class="tabcontent  cd-schedule__event">
-              <a data-start="09:30" data-end="12:30" data-content="event-abs-circuit" data-event="event-1" href="#0">
+              <a data-start="09:00" data-end="12:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
                 <em class="cd-schedule__name">Introduction to Tracking / 2D Tracking </em>
               </a>
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3" href="#0">
-                <em class="cd-schedule__name">Yoga Level 1</em>
+              <a data-start="13:00" data-end="17:00"  data-content="event-colors2" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Color Correction and Color Grading</em>
               </a>
             </li>
           </ul>
@@ -267,7 +261,9 @@
   </div> <!-- .cd-schedule -->
 
   <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+ 
   <script src="assets/js/main.js"></script>
+
   <script>
           function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
@@ -283,5 +279,11 @@
             evt.currentTarget.className += " active";
           }
 </script>
+
+<script>
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
