@@ -60,7 +60,7 @@
             height: 100%;
         }
 
-        .accordion {
+        .accordion-inside {
             background-color: #eee;
             color: #444;
             cursor: pointer;
@@ -73,11 +73,11 @@
             transition: 0.4s;
           }
 
-          .active, .accordion:hover {
+          .active-inside, .accordion-inside:hover {
             background-color: #ccc;
           }
 
-          .accordion:after {
+          .accordion-inside:after {
             content: '\002B';
             color: #777;
             font-weight: bold;
@@ -85,11 +85,11 @@
             margin-left: 5px;
           }
 
-          .active:after {
+          .active-inside:after {
             content: "\2212";
           }
 
-          .panel {
+          .panel-inside {
             padding: 0 18px;
             background-color: white;
             max-height: 0;
@@ -758,14 +758,14 @@
   </script>
 
 <script>
-          var acc = document.getElementsByClassName("accordion");
+          var acc = document.getElementsByClassName("accordion-inside");
           var i;
           
           for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
               /* Toggle between adding and removing the "active" class,
               to highlight the button that controls the panel */
-              this.classList.toggle("active");
+              this.classList.toggle("active-inside");
               /* Toggle between hiding and showing the active panel */
               var panel = this.nextElementSibling;
               if (panel.style.maxHeight) {
