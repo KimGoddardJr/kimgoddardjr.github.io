@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Pax pipe monogram P">
+  <rect width="1024" height="1024" fill="#0B0F14"/>
+  <g fill="none" stroke="#2EE6A6" stroke-width="72" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M320 220 V804"/>
+    <path d="M320 220 H560 C700 220 780 300 780 420 C780 540 700 620 560 620 H320"/>
+  </g>
+  <circle cx="320" cy="220" r="28" fill="#E8EEF2"/>
+  <circle cx="320" cy="804" r="28" fill="#E8EEF2"/>
+</svg>
